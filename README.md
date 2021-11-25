@@ -21,6 +21,7 @@
 ```
 ffmpeg -i <YOUR VIDEO NAME>.mp4 -filter_complex "[0:a]showwaves=s=cif:mode=line:colors=white,colorkey=0x000000:0.01:0.1,format=yuva420p[v];[0:v]scale=cif[bg];[bg][v]overlay[outv]" -map "[outv]" -map 0:a -c:v libx264 -c:a copy video-soundwave.mp4
 ```
+- you can change the parameters (ex. quality) however you want
 ## example
 https://www.youtube.com/watch?v=CIRylCFM-28
 ## Team
