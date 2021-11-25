@@ -7,7 +7,7 @@
   ```
   git clone https://www.github.com/DanyB0/nighty
   ```
-- #### install the requirements
+- #### install the requirements (you MUST have ffmpeg installed)
   ```
   pip install -r requirements.txt
   ```
