@@ -16,8 +16,8 @@
 - put in the "ingredients" folder one or more songs and one or more images
 - `python main.py`
 - in the "final" folder will be created your video
-#### how to have the wavesound like in the example below
-- create the nightcore video and copy-paste tis code in a terminal (change the name of your video)
+#### how to create the wavesound like in the example below
+- create the nightcore video and copy-paste this code in a terminal (change the name of your video)
 ```
 ffmpeg -i <YOUR VIDEO NAME>.mp4 -filter_complex "[0:a]showwaves=s=cif:mode=line:colors=white,colorkey=0x000000:0.01:0.1,format=yuva420p[v];[0:v]scale=cif[bg];[bg][v]overlay[outv]" -map "[outv]" -map 0:a -c:v libx264 -c:a copy video-soundwave.mp4
 ```
